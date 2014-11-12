@@ -1,4 +1,1 @@
-core
-====
-
-Common library
+# DETAIL Framework common library
