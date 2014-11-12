@@ -29,7 +29,7 @@ class DoctrineORMBasedRepositoryFactory extends DefaultRepositoryFactory impleme
         $serviceLocator = $this->getServiceLocator();
 
         // Fetch custom repository from ServiceManager if it exists.
-        // This way we support the creation of repositories with additional depencencies.
+        // This way we support the creation of repositories with additional dependencies.
         if ($repositoryClassName !== null && $serviceLocator->has($repositoryClassName)) {
             return $serviceLocator->get($repositoryClassName);
         }
