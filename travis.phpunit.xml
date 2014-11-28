@@ -1,5 +1,5 @@
 <phpunit
-    bootstrap="./bootstrap.php"
+    bootstrap="./tests/bootstrap.php"
     colors="true"
     convertErrorsToExceptions="true"
     convertNoticesToExceptions="true"
@@ -11,17 +11,17 @@
     syntaxCheck="true"
 >
     <testsuite name="Detail\Core Test Suite">
-        <directory>./DetailTest/Core</directory>
+        <directory>./tests/DetailTest/Core</directory>
     </testsuite>
 
     <filter>
         <whitelist>
-            <directory suffix=".php">../src</directory>
+            <directory suffix=".php">./src</directory>
         </whitelist>
     </filter>
 
     <logging>
-        <log type="coverage-clover" target="../build/logs/clover.xml"/>
-        <log type="junit" target="../build/logs/junit.xml" logIncompleteSkipped="false"/>
+        <log type="coverage-clover" target="./build/logs/clover.xml"/>
+        <log type="junit" target="./build/logs/junit.xml" logIncompleteSkipped="false"/>
     </logging>
 </phpunit>
