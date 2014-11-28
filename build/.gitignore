@@ -1,5 +1,5 @@
 *
 !config
+!config/*
 !logs
 !.gitignore
-!coverage-checker.php
