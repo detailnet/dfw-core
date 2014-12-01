@@ -1,8 +1,6 @@
 <?php
-define('PHP_BIN_PATH', 'php');
 
 $loader = null;
-
 $basePath = realpath(__DIR__ . '/..') . '/';
 
 if (file_exists($basePath . 'vendor/autoload.php')) {
