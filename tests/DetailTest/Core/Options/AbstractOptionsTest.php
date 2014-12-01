@@ -14,7 +14,13 @@ class AbstractOptionsTest extends TestCase
     protected function setUp()
     {
         $this->options = $this->getMockForAbstractClass(
-            'Detail\Core\Options\AbstractOptions', array(), '', true, true, true, array('getKnown')
+            'Detail\Core\Options\AbstractOptions',
+            array(),
+            '',
+            true,
+            true,
+            true,
+            array('getKnown')
         );
 
         $this->options->expects($this->any())

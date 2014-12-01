@@ -13,9 +13,7 @@ class TypeAwareOptionsTraitTest extends TestCase
 
     protected function setUp()
     {
-        $this->options = $this->getMockForTrait(
-            'Detail\Core\Options\TypeAwareOptionsTrait', array(), '', true, true, true, array('getKnown')
-        );
+        $this->options = $this->getMockForTrait('Detail\Core\Options\TypeAwareOptionsTrait');
     }
 
     public function testTypeCanBeSetAndAccessed()
