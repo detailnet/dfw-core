@@ -1,6 +1,6 @@
 <?php
 
-namespace DetailTest\InputFilter;
+namespace DetailTest\Core\InputFilter;
 
 use PHPUnit_Framework_TestCase as TestCase;
 
