@@ -30,13 +30,17 @@
     },
     "autoload": {
         "psr-0": {
-            "Detail\\Core\\": "src/",
+            "Detail\\Core\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
             "DetailTest\\Core\\": "tests/"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.1.x-dev"
+            "dev-master": "1.x-dev"
         }
     },
     "archive": {
