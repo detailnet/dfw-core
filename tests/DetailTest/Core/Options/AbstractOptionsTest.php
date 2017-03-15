@@ -2,19 +2,23 @@
 
 namespace DetailTest\Core\Options;
 
-use PHPUnit_Framework_TestCase as TestCase;
+use BadMethodCallException;
+
+use PHPUnit\Framework\TestCase;
+
+use Detail\Core\Options\AbstractOptions;
 
 class AbstractOptionsTest extends TestCase
 {
     /**
-     * @var \Detail\Core\Options\AbstractOptions
+     * @var AbstractOptions
      */
     protected $options;
 
     protected function setUp()
     {
         $this->options = $this->getMockForAbstractClass(
-            'Detail\Core\Options\AbstractOptions',
+            AbstractOptions::CLASS,
             array(),
             '',
             true,
@@ -40,7 +44,7 @@ class AbstractOptionsTest extends TestCase
 
     public function testGetUnknownOptionThrowsException()
     {
-        $this->setExpectedException('BadMethodCallException');
+        $this->expectException(BadMethodCallException::CLASS);
 
         $this->options->unknown;
     }
