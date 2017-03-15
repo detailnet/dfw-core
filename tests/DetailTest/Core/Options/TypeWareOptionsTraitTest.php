@@ -2,18 +2,20 @@
 
 namespace DetailTest\Core\Options;
 
-use PHPUnit_Framework_TestCase as TestCase;
+use PHPUnit\Framework\TestCase;
+
+use Detail\Core\Options\TypeAwareOptionsTrait;
 
 class TypeAwareOptionsTraitTest extends TestCase
 {
     /**
-     * @var \Detail\Core\Options\TypeAwareOptionsTrait
+     * @var TypeAwareOptionsTrait
      */
     protected $options;
 
     protected function setUp()
     {
-        $this->options = $this->getMockForTrait('Detail\Core\Options\TypeAwareOptionsTrait');
+        $this->options = $this->getMockForTrait(TypeAwareOptionsTrait::CLASS);
     }
 
     public function testTypeCanBeSetAndAccessed()
